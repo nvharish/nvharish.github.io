@@ -1,0 +1,72 @@
+@import url("normalize.css");
+
+html {
+  font-size: 16px;
+  font-family: "Open Sans", serif;
+  letter-spacing: 1px;
+  line-height: 2;
+  box-sizing: border-box;
+  color: #000000;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body,
+main {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+h1 {
+  font-size: 40px;
+  transform: rotate(-5deg);
+  font-family: "Kaushan Script";
+  margin: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+#intro {
+  background-color: #001f3f;
+  color: whitesmoke;
+  width: 100%;
+  margin: 0;
+  border: none;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.circle {
+  border-radius: 100%;
+}
+
+#intro img {
+  object-fit: cover;
+}
+
+#intro p {
+  font-size: 18px;
+  margin: 0;
+}
+
+#intro ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.social-link {
+  color: whitesmoke;
+  font-size: 32px;
+}
