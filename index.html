@@ -74,8 +74,8 @@
       </ul>
     </header>
 
-    <main class="container">
-      <section id="about">
+    <main>
+      <section id="about" class="container">
         <h2>About me</h2>
         <div id="profileSummary">
           <div id="profile">
@@ -107,7 +107,7 @@
         </div>
       </section>
 
-      <section id="resume">
+      <section id="resume" class="container">
         <h2>My Resume</h2>
         <ul class="nobullets">
           <li class="resume-sub-heading">
@@ -203,36 +203,52 @@
 
       <section id="services">
         <h2>My Services</h2>
-        <ul>
-          <li>
-            <img alt="Web Development" />
-            <p>
-              Custom Web Development, Responsive Design, Front-end Development,
-              Rest API's Development, GraphQL API's Development, Maintenance
-            </p>
-          </li>
-          <li>
-            <img alt="Payment Gateways" />
-            <p>
-              Seamless Transactions, Custom Solutions, Enhanced User Experience,
-              E-commerce Expertise, Secure and Reliable
-            </p>
-          </li>
-          <li>
-            <img alt="Code refactoring" />
-            <p>
-              Enhanced Readability, Performance Optimization, Scalability,
-              Duplication Removal, Consistent Coding Standards, Bug Resolution
-            </p>
-          </li>
-          <li>
-            <img alt="Helper Libraries" />
-            <p>
-              Customized Solutions, Code Efficiency, Reusable Components,
-              Time-Saving Tools, Error Reduction, Documentation, Version Control
-            </p>
-          </li>
-        </ul>
+        <div class="container">
+          <ul class="nobullets">
+            <li>
+              <div class="service-icon">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <h3>Web Development</h3>
+              <p>
+                Custom Web Development, Responsive Design, Front-end
+                Development, Rest API's Development, GraphQL API's Development,
+                Maintenance
+              </p>
+            </li>
+            <li>
+              <div class="service-icon">
+                <i class="fa-solid fa-file-invoice-dollar"></i>
+              </div>
+              <h3>Payment Gateways</h3>
+              <p>
+                Seamless Transactions, Custom Solutions, Enhanced User
+                Experience, E-commerce Expertise, Secure and Reliable
+              </p>
+            </li>
+            <li>
+              <div class="service-icon">
+                <i class="fa-brands fa-react"></i>
+              </div>
+              <h3>Refactoring</h3>
+              <p>
+                Enhanced Readability, Performance Optimization, Scalability,
+                Duplication Removal, Consistent Coding Standards, Bug Resolution
+              </p>
+            </li>
+            <li>
+              <div class="service-icon">
+                <i class="fa-solid fa-book"></i>
+              </div>
+              <h3>Helper Libraries</h3>
+              <p>
+                Customized Solutions, Code Efficiency, Reusable Components,
+                Time-Saving Tools, Error Reduction, Documentation, Version
+                Control
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section id="skills">
