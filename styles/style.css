@@ -386,3 +386,8 @@ div:not(.badge).project-item-right {
 #projects a:hover {
   color: var(--color-medium-red);
 }
+
+footer {
+  background-color: var(--color-light-grey);
+  text-align: center;
+}
