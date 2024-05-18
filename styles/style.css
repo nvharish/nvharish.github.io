@@ -62,7 +62,6 @@ h1 {
 
 h2 {
   text-align: center;
-  margin-top: 48px;
   margin-bottom: 48px;
   font-size: 40px;
 }
@@ -92,6 +91,10 @@ h3 {
   text-align: justify;
 }
 
+.text-center {
+  text-align: center;
+}
+
 /* || SITEWIDE */
 
 .social-link-white {
@@ -110,6 +113,15 @@ h3 {
   position: absolute;
   top: 57px;
   left: calc(50% - 22px);
+}
+
+#about,
+#resume,
+#services,
+#skills,
+#projects,
+#contact {
+  margin-top: 128px;
 }
 
 /* || INTRO SECTION */
@@ -150,15 +162,6 @@ h3 {
 }
 
 /* || ABOUT SECTION */
-
-#about,
-#resume,
-#services,
-#skills,
-#projects,
-#contact {
-  margin-top: 128px;
-}
 
 #profileSummary {
   display: flex;
@@ -237,23 +240,18 @@ div:not(.badge).resume-item-right {
 #services {
   background-color: var(--color-dark-navy);
   color: var(--color-smoke-white);
-  height: 900px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  justify-items: center;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 #services ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: minmax(100px, auto);
   grid-gap: 28px;
   gap: 28px;
 }
 
 #services ul li {
-  flex: 0.5;
   text-align: center;
 }
 
@@ -314,4 +312,77 @@ div.service-icon {
 
 #secondarySkill li canvas {
   width: 100%;
+}
+
+/* || PROJECT SECTION */
+
+#projects {
+  background-color: var(--color-dark-navy);
+  color: var(--color-smoke-white);
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+#projects ul li {
+  position: relative;
+  display: flex;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+#projects ul li.project-sub-heading {
+  border: 0;
+  padding: 0;
+  color: var(--color-dark-navy);
+  justify-content: center;
+}
+
+#projects h3 {
+  background-color: var(--color-light-grey);
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#projects ul li div:not(.badge) {
+  width: 50%;
+  margin-top: 60px;
+}
+
+#projects ul li:not(#projects ul li.project-sub-heading)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: var(--color-light-grey);
+  left: 50%;
+}
+
+div:not(.badge).project-item-left {
+  text-align: right;
+  padding-right: 48px;
+}
+
+div:not(.badge).project-item-right {
+  padding-left: 48px;
+}
+
+#projects div.badge {
+  background-color: var(--color-smoke-white);
+  color: var(--color-dark-navy);
+}
+
+#projects ul li.inverted-item {
+  justify-content: flex-end;
+}
+
+#projects a {
+  text-decoration: none;
+  color: var(--color-smoke-white);
+}
+
+#projects a:hover {
+  color: var(--color-medium-red);
 }
