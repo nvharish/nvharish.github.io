@@ -21,7 +21,7 @@ Here are a few projects that I've worked on:
 
 ## Skills
 
-- **Frontend**: HTML5, CSS3, JavaScript, React.js
+- **Frontend**: HTML, CSS, JavaScript, React.js
 - **Backend**: Node.js, Express.js, Symfony, PHP
 - **Database**: MongoDB, MySQL, PostgreSQL
 - **Other**: Git, RESTful APIs, GraphQL, Code Quality Tools, DevOps, AWS, Agile
