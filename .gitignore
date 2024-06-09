@@ -1,4 +1,4 @@
 .prettierignore
 styles/normailize.min.css
-styles/style.css
+styles/style.min.css
 js/main.min.js
