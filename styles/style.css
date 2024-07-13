@@ -371,10 +371,19 @@ div.service-icon {
 
   #primarySkill {
     grid-template-columns: repeat(2, 1fr);
+    justify-items: stretch;
   }
 
   #services ul {
     grid-template-columns: repeat(2, 1fr);
+    justify-items: stretch;
+  }
+
+  #primarySkill,
+  #secondarySkill,
+  #services ul {
+    grid-gap: 14px;
+    gap: 14px;
   }
 }
 
