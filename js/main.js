@@ -41,7 +41,7 @@ function animatePrimarySkills() {
     n = e;
   function a(i, c) {
     var d;
-    (n += Math.PI / 180),
+    (n += Math.PI / 360),
       (d = i).clearRect(0, 0, t, r),
       d.beginPath(),
       d.arc(o, l, 70, e, n),
@@ -91,5 +91,32 @@ function animateSecondarySkills() {
   }
 }
 document.addEventListener("DOMContentLoaded", () => {
-  animatePrimarySkills(), animateSecondarySkills();
+  const sections = document.querySelectorAll(".fade-in-section");
+
+  const options = {
+    root: null, // relative to document viewport
+    rootMargin: "0px", // margin around root
+    threshold: 0.1, // visible amount of item shown in viewport
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("fade-in");
+        observer.unobserve(entry.target); // stop observing after fade-in
+
+        if (entry.target.id === "primarySkill") {
+          animatePrimarySkills();
+        }
+
+        if (entry.target.id === "secondarySkill") {
+          animateSecondarySkills();
+        }
+      }
+    });
+  }, options);
+
+  sections.forEach((section) => {
+    observer.observe(section);
+  });
 });
