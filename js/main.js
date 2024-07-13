@@ -44,7 +44,7 @@ function animatePrimarySkills() {
     (n += Math.PI / 180),
       (d = i).clearRect(0, 0, t, r),
       d.beginPath(),
-      d.arc(o, l, 75, e, n),
+      d.arc(o, l, 70, e, n),
       (d.strokeStyle = colorBrightBlue),
       (d.lineWidth = 4),
       d.stroke(),
