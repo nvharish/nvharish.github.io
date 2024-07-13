@@ -368,6 +368,14 @@ div.service-icon {
     padding-left: 8px;
     padding-right: 8px;
   }
+
+  #primarySkill {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #services ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* Small devices (landscape phones, 576px and up) */
